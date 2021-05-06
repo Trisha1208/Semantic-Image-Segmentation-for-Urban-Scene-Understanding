@@ -5,8 +5,9 @@ FCN with Resnet50 Encoder using Transfer Learning
 Label each pixel of an image with a corresponding class of what is being represented referred to as dense prediction. 
 Fine-grained inference by making dense predictions inferring labels for every pixel, so that each pixel is labeled with the class of its enclosing object or region.
 
-![Image Segmentation](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kaggle.com%2Fdansbecker%2Fcityscapes-image-pairs&psig=AOvVaw0M5_bOePgq9tIGTNcrcq8v&ust=1620397018613000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDLsZugtfACFQAAAAAdAAAAABAD)
+<img src="https://github.com/Trisha1208/Semantic-Image-Segmentation-for-Urban-Scene-Understanding/blob/main/data-original.jpg" width="600" height="400" />
 
+ 
 This dataset is taken from Kaggle and mainly focuses on semantic understanding of urban street scenes.
 Cityscapes Image Pairs dataset is a processed version of the original Cityscapes dataset which contains labelled videos.
 The dataset has still images from the original videos, and semantic segmentation labels are shown in images right alongside the original image 2975 training images files and 500 validation images.
@@ -23,7 +24,7 @@ Link:https://www.kaggle.com/dansbecker/cityscapes-image-pairs
 * Obtain a coarse output.
 * Adding ‘skip connections’ in the Upsampling stage from earlier layers and summing the two feature maps. 
 * These skip connections provide enough information to later layers to generate accurate segmentation boundaries.This combination of fine and coarse layers leads to local predictions with nearly accurate global (spatial) structure. 
-![skip connections]()
+![skip connections](https://github.com/Trisha1208/Semantic-Image-Segmentation-for-Urban-Scene-Understanding/blob/main/Skip%20Connections.png)
 
 # Implementation Details
 
@@ -35,8 +36,8 @@ Link:https://www.kaggle.com/dansbecker/cityscapes-image-pairs
 * Output will be with coarse spatial features, which can be further upsampled to form the classification maps corresponding to our image.
 * Three different methods implemented:
 ## U-Net
-![U-Net]()
+![U-Net](https://github.com/Trisha1208/Semantic-Image-Segmentation-for-Urban-Scene-Understanding/blob/main/UNet_learn.png)
 ## Fully Convolutional Network with VGG16 encoder
-![VGG16]()
+![VGG16](https://github.com/Trisha1208/Semantic-Image-Segmentation-for-Urban-Scene-Understanding/blob/main/VGG_learn.png)
 ## Fully Convolutional Network with ResNet50 encoder
-![ResNet50]()
+![ResNet50](https://github.com/Trisha1208/Semantic-Image-Segmentation-for-Urban-Scene-Understanding/blob/main/ResNet50_learning.png)
